@@ -1,0 +1,8 @@
+{% extends '__base.html' %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    {% autoescape false %}
+    {{ page_content }}
+    {% endautoescape %}
+{% endblock %}

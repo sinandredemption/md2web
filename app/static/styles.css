@@ -1,0 +1,91 @@
+body {
+    margin:1em auto;
+    max-width:40em;
+    padding:0 .62em;
+    font:1.2em/1.62 sans-serif
+}
+
+h1,h2,h3 {
+    line-height:1.2
+}
+
+a:link {
+    color: #4477bb;
+}
+
+a:visited {
+    color: #777766;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+}
+
+img {
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.5);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+p {
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    color: #202122;
+}
+
+code {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #d5d5d5;
+}
+.header {
+    font-size:smaller;
+    display: flex;
+    justify-content: center;
+}
+
+.header div {
+    margin-right: 1em;
+}
+
+.header a:link, .header a:visited,
+.footer a:link, .footer a:visited {
+    color: #777;
+}
+
+.footer {
+    font-size:smaller;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer div {
+    width: 100%;
+}
+
+.codehilite code {
+    display: block;
+    background: rgba(1,1,1, 0.025);
+    overflow: auto;
+    padding: 1em;
+    border-radius: 1em;
+}

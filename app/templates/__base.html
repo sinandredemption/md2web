@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='code.css') }}">
+
+    <title>{{ title }} - {{ WebsiteName }}</title>
+  </head>
+  <body>
+    <div class="header">
+      <div><a href="/">Home</a></div>
+      <div><a href="/features">Features</a></div>
+      <div><a href="/license">License</a></div>
+      <div><a href="https://github.com/sinandredemption/md2web">GitHub</a></div>
+    </div>
+
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+    <br/><br/><br/>
+
+    <div class="footer">
+      <div class="item"><a href="https://github.com/sinandredemption/">Author</a></div>
+      <div class="item" style="text-align: right;"><a href="/">Back to Home</a></div>
+    </div>
+
+  </body>
+</html>
