@@ -1,4 +1,4 @@
-md2html is a minimalistic, hackable Flask application that renders Markdown files as HTML pages.
+md2web is a minimalistic, hackable Flask application that renders Markdown files as HTML pages.
 
 [demo.webm](https://user-images.githubusercontent.com/47252029/233772908-5afd56f7-b16a-458d-91f7-fed017127aa4.webm)
 
