@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 - **Demo:** You can now view the demo website by opening a web browser and navigating to `http://localhost:5000`. The website should display the content of the Markdown files in the `Sample Website` directory.
 
-- **Make changes:** You can modify the content of the Markdown files in the `Sample Website` directory and save the changes. Refresh the website the to verify that the changes are reflected in real-time.
+- **Make changes:** You can modify the content of the Markdown files in the `Sample Website` directory and save the changes. Refresh the website to verify that the changes are reflected in real-time.
 
 By default, md2web will serve a website that will give you a good tour of the features and a jist of md2web. The fastest way to get started would be to build your project on top of that website.
 
