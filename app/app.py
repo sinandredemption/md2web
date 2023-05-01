@@ -56,9 +56,6 @@ def page_contents(file_path):
 
 @app.route('/<path:url_path>')
 def route_url(url_path):
-    if os.path.isfile("templates/" + url_path):
-        return send_from_directory("templates", url_path)
-
     url_path = url_path.strip("/")
 
     # Split the URL path into its component folders and files
@@ -73,6 +70,10 @@ def route_url(url_path):
             return render_template("__404.html")
 
         file_path += matching_path + "/"
+
+    # Check for direct file match
+    if os.path.isfile("templates/" + file_path + url_path.split('/')[-1]):
+        return send_from_directory("templates", file_path + url_path.split('/')[-1])
 
     # Finally, find the file requested by the URL
     matching_file = find_matching_file("templates/" + file_path, path_components[-1])
