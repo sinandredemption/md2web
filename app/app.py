@@ -49,7 +49,7 @@ def page_contents(file_path):
     contents = ''
     file_path.strip("/")
 
-    with open("templates/" + file_path, 'r') as f:
+    with open("templates/" + file_path, 'r', encoding='utf-8') as f:
         contents = f.read()
 
     return contents
