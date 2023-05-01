@@ -1,0 +1,9 @@
+<p>URLs are handled as paths to files inside <code>templates</code> folder, but with a bit more flexibility.</p>
+<h2>Ignoring characters and extensions in HTML File Names</h2>
+<p>When serving HTML files, md2web ignores all characters except for alpha-numeric characters. This means that if you have a file called <code>My Cool Page!!!.md</code>, the resulting HTML file will be called <code>My Cool Page!!!.html</code>. So, if you want to access that file, you can use the URL <code>/blog/my-cool-page</code> regardless of the exact case of the letters or the presence of spaces or hyphens.</p>
+<h2>Case Insensitivity for Folders and Files</h2>
+<p>Folders and files in md2web are not case-sensitive. This means that if you have a folder called <code>Blog</code>, you can access it with any combination of upper and lower case letters, such as <code>/blog</code>, <code>/bLog</code>, or <code>/BLOG</code>. The same applies to files within those folders - for example, if you have a file called <code>MyFile.html</code>, you can access it with any combination of upper and lower case letters, such as <code>/blog/myfile</code>, <code>/Blog/Myfile</code>, or <code>/BLOG/MYFILE</code>.</p>
+<h2>'-' (dash) is substituted by space</h2>
+<p>In md2web, the '-' character in URLs is substituted by a space character ' '. So, for example, <code>/blog/my-file</code> and <code>/blog/my file</code> both point to the same file.</p>
+<h2>Serving non-HTML Files</h2>
+<p>If you have non-HTML files in your <code>templates</code> directory, md2web will serve them directly if there is an exact match in the URL. For example, if you have a file called <code>Resume.pdf</code> in your <code>templates</code> directory, you can access it directly with <code>/Resume.pdf</code>.</p>

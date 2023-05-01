@@ -1,0 +1,15 @@
+<p>Code highlighting in Markdown documents is handled by the <code>codehilite</code> extension of the Python Markdown library.</p>
+<h2>Using Code Highlighting</h2>
+<p>To use code highlighting in your Markdown document, you will need to specify the language of the code snippet at the beginning of the code block using the <code>~~~</code> syntax. For example, to highlight a block of Python code, you would use the following syntax:</p>
+<p><code>~~~python def hello():     print("Hello, world!") ~~~</code></p>
+<p>This will produce the following highlighted code block:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Without mentioning the language explicitly, code highlighting is disabled:</p>
+<div class="codehilite"><pre><span></span><code>def hello():     print(&quot;Hello, world!&quot;)
+</code></pre></div>
+
+<p>The <code>codehilite</code> extension supports a wide range of programming languages, including Python, HTML, CSS, JavaScript, Java, C++, and many others. To see a full list of supported languages, you can refer to the <a href="https://python-markdown.github.io/extensions/code_hilite/">official documentation</a> for the <code>codehilite</code> extension.</p>
+<h3>Theme</h3>
+<p>The theme for code highlighting is present in <code>static/code.css</code> file. You can customize this or generate new themes using Pygmentize. See <a href="https://python-markdown.github.io/extensions/code_hilite/#step-2-add-css-classes">CodeHilite's excellent documentation</a> for simple instructions on generating new themes.</p>
