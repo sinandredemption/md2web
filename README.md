@@ -59,7 +59,7 @@ The `config` file contains configuration options (in a `key=value` format). The 
 A sample `config` with generic defaults is provided.
 
 ### Page structure
-`Frontpage.md` is automatically set as the default "home" of your website. The markdown for this file is located inside `md2web/app/Markdown/Frontpage.md`.
+`Frontpage.md` is automatically set as the default "home" of your website.
 
 ### URL Handling
 URLs are handled as paths to files inside `templates` folder, but with a bit more flexibility.
